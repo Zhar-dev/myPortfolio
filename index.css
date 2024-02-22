@@ -6,7 +6,7 @@ body {
 
 nav {
     background-color: #272829;
-    height: 5.4rem;
+    height: 5rem;
 }
 
 ul {
@@ -14,16 +14,16 @@ ul {
     margin: 0;
     padding: 0;
 
-    margin-right: 14rem;
+    margin-right: 8rem;
 }
 
 li {
     display: inline;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     float: right;
     padding: 20px 20px;
     transition: opacity 4s;
-    margin-top: 0.7rem;
+    margin-top: 0.4rem;
 }
 
 a:hover {
@@ -35,4 +35,31 @@ li a {
     text-align: center;
     color: white;
     transition: all 0.5s;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+.con1 {
+    margin-top: 4rem;
+}
+.main-title {
+    text-align: center;
+    text-shadow: 2px 2px 16px rgb(59, 58, 63);
+    font-weight: 600;
+    font-size: 3.6rem;
+}
+
+.coder {
+    font-family: Roboto;
+    color: #2D3250;
+    font-weight: bold;
+}
+
+.editor {
+    font-family: Montserrat;
+    color: #ffa75e;
 }
