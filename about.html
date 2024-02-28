@@ -13,7 +13,7 @@
             padding: 0;
 
             font-family: Poppins, "Roboto";
-            color: #272829;
+            color: #353536;
             }
             nav {
             background-color: #272829;
@@ -42,7 +42,70 @@
             transition: all 0.5s;
             }
             a:hover {
-            opacity: 0.4;
+            opacity: 0.4s;
+            }
+            .container {
+                  display: flex;
+                  justify-content: center;
+            }
+            .main1 {
+                  width: 40rem;
+                  display: block;
+                  flex-direction: row;
+                  text-align: center;
+
+                  margin-top: 4rem;
+                  margin-bottom: 4rem;
+            }
+            .a1, .a2, .a3 {
+                  margin: 0;
+            }
+            .a1 {
+                  font-size: 4.2rem;
+                  font-weight: 620;
+                  margin-bottom: 1.2rem;
+            }
+            .a2 {
+                  font-size: 1.2rem;
+                  margin-bottom: 1.2rem;
+                  font-weight: 500;
+                  color: rgb(92, 92, 92);
+            }
+            .a3 {
+                  font-size: 1rem;
+                  color: rgb(92, 92, 92);
+            }
+            .container1 {
+                  display: flex;
+                  margin-top: 4rem;
+                  margin-left: 3rem;
+            }
+            .con2{
+                  display: inline-block;
+                  align-items: rights;
+                  width: 30rem;
+            }
+            .hobbies {
+                  display: block;
+                  justify-content: center;
+                  text-align: center;
+            }
+            .title2 {
+                  display: inline-block;
+                  font-weight: 600;
+                  width: 30rem;
+                  font-size: 2rem;
+                  margin-bottom: 0;
+            }
+            .list {
+                 text-align: center;
+            }
+            .fav {
+                  display: flex;
+                  text-align: center;
+                  font-size: 1.1rem;
+                  padding: 20px 20px;
+                  margin-top: 0.6rem;
             }
       </style>
 </head>
@@ -50,12 +113,29 @@
       <header>
             <nav>
                   <ul>
-                        <li><a href="">contact</a></li>
-                        <li><a href="">project</a></li>
-                        <li><a href="">skills</a></li>
-                        <li><a href="">about</a></li>
+                        <li><a href="contact.html">contact</a></li>
+                        <li><a href="project.html">project</a></li>
+                        <li><a href="skill.html">skills</a></li>
+                        <li><a href="about.html">about</a></li>
                   </ul>
             </nav>
       </header>
+      <section class="container">
+            <div class="main1">
+                  <p class="a1">about&#46;</p>
+                  <p class="a2">I'm a front-end Developer based from Palawan, Philippines</p>
+                  <p class="a3">Since 2020, I'm so interested in Technology mainly on the interface design of the website and application, It's my passsion in learning and doing what i love, and most importantly giving the best effort i have to satisfy my clients.</p>
+            </div>
+      </section>
+      <section class="hobbies">
+            <p class="title2">Random Facts</p>
+            <ul class="list">
+                  <li class="fav">I love organizing and planning</li>
+                  <li class="fav">I like Editing and Dessigning</li>
+                  <li class="fav">A little bit of Perfectionist</li>
+                  <li class="fav">Anime Lovers</li>
+                  <li class="fav">Self Development Addict</li>
+            </ul>
+      </section>
 </body>
 </html>
