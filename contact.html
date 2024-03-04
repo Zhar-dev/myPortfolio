@@ -9,40 +9,96 @@
       <title>About</title>
       <style>
             body {
-            margin: 0;
-            padding: 0;
+                margin: 0;
+                padding: 0;
 
-            font-family: Poppins, "Roboto";
-            color: #272829;
+                font-family: "Poppins";
+                color: #353536;
             }
             nav {
-            background-color: #272829;
-            height: 5rem;
+                background-color: #272829;
+                height: 5rem;
+            }
+            .logo {
+                width: 8rem;
+                margin-left: 6rem;
             }
             ul {
-            margin: 0;
-            padding: 0;
+                margin: 0;
+                padding: 0;
 
-            list-style-type: none;
+                list-style-type: none;
 
-            margin-right: 8rem;
+                margin-right: 8rem;
             }
             li {
-            display: flex;
-            float: right;
-            font-size: 1.1rem;
-            padding: 20px 20px;
-            transition: opacity 2s;
-            margin-top: 0.4rem;
+                display: flex;
+                float: right;
+                font-size: 1.1rem;
+                padding: 20px 20px;
+                transition: opacity 2s;
+                margin-top: 0.4rem;
             }
             li a {
-            text-decoration: none;
-            text-align: center;
-            color: white;
-            transition: all 0.5s;
+                text-decoration: none;
+                text-align: center;
+                color: white;
+                transition: all 0.5s;
             }
             a:hover {
-            opacity: 0.4;
+                opacity: 0.4;
+            }
+            .container {
+                  display: flex;
+                  justify-content: center;
+                  column-gap: 2rem;
+            }
+            .main1 {
+                  background-color: antiquewhite;
+                  width: 40rem;
+                  display: block;
+                  flex-direction: row;
+                  text-align: center;
+
+                  margin-top: 4rem;
+                  margin-bottom: 4rem;
+            }
+            .main2 {
+                  background-color: antiquewhite;
+                  width: 40rem;
+                  display: block;
+                  flex-direction: row;
+                  text-align: center;
+
+                  margin-top: 4rem;
+                  margin-bottom: 4rem;
+            }
+            .a1, .a2, .a3 {
+                  margin: 0;
+            }
+            .a1 {
+                  font-size: 6rem;
+                  font-weight: 620;
+                  margin-bottom: 1.2rem;
+            }
+            .a2 {
+                  font-size: 1.2rem;
+                  margin-bottom: 1.2rem;
+                  font-weight: 500;
+                  color: rgb(92, 92, 92);
+            }
+            .socials {
+                  display: block;
+                  width: 12rem;
+                  background-color: aliceblue;
+            }
+            .socials-pic {
+                  display: inline;
+                  width: 4rem;
+            }
+            .socials-texts {
+                  display: block;
+                  width: 6rem;
             }
       </style>
 </head>
@@ -50,6 +106,7 @@
       <header>
             <nav>
                   <ul>
+                        <a href="index.html"><img class="logo" src="pic/logo.svg" alt=""></a>
                         <li><a href="contact.html">contact</a></li>
                         <li><a href="project.html">project</a></li>
                         <li><a href="skill.html">skills</a></li>
@@ -57,5 +114,27 @@
                   </ul>
             </nav>
       </header>
+      <section class="container">
+            <div class="main1">
+                  <p class="a1">contact&#46;</p>
+                  <p class="a2">Get in touch with me via social media or email&#46;</p>
+                        <div class="socials">
+                              <div class="social-pics">
+                                    <img class="pic" src="pic/facebook_logo_icon_147291.svg" alt="">
+                              </div>
+                              <div class="social-texts">
+                                    <a class="social-buttons" href="https://web.facebook.com/zharwahab">Facebook</a>
+                              </div>
+                        </div>
+                              
+            </div>
+            <div class="main2">
+                  <p>Website</p>
+                  <form action="POST">
+                        <label for=""></label>
+                        <input type="text">
+                  </form>
+            </div>
+      </section>
 </body>
 </html>
