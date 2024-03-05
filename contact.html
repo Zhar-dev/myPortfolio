@@ -42,6 +42,7 @@
             li a {
                 text-decoration: none;
                 text-align: center;
+                margin-right: 20px;
                 color: white;
                 transition: all 0.5s;
             }
@@ -54,51 +55,44 @@
                   column-gap: 2rem;
             }
             .main1 {
-                  background-color: antiquewhite;
                   width: 40rem;
                   display: block;
                   flex-direction: row;
                   text-align: center;
+                  justify-content: center;
 
                   margin-top: 4rem;
                   margin-bottom: 4rem;
             }
-            .main2 {
-                  background-color: antiquewhite;
-                  width: 40rem;
-                  display: block;
-                  flex-direction: row;
-                  text-align: center;
-
-                  margin-top: 4rem;
-                  margin-bottom: 4rem;
-            }
-            .a1, .a2, .a3 {
+            .title-1, .title-2 {
                   margin: 0;
             }
-            .a1 {
+            .title-1 {
                   font-size: 6rem;
                   font-weight: 620;
                   margin-bottom: 1.2rem;
             }
-            .a2 {
+            .title-2 {
                   font-size: 1.2rem;
                   margin-bottom: 1.2rem;
                   font-weight: 500;
                   color: rgb(92, 92, 92);
             }
-            .socials {
-                  display: block;
-                  width: 12rem;
-                  background-color: aliceblue;
+            .socials-links {
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  width: 40rem;
+                  margin-top: 2rem;
             }
             .socials-pic {
                   display: inline;
                   width: 4rem;
             }
-            .socials-texts {
-                  display: block;
-                  width: 6rem;
+            img {
+                  width: 4rem;
+                  margin-left: 2rem;
+                  margin-right: 2rem;
             }
       </style>
 </head>
@@ -107,8 +101,8 @@
             <nav>
                   <ul>
                         <a href="index.html"><img class="logo" src="pic/logo.svg" alt=""></a>
-                        <li><a href="contact.html">contact</a></li>
-                        <li><a href="project.html">project</a></li>
+                        <li><a href="">contact</a></li>
+                        <li><a href="project.html">projects</a></li>
                         <li><a href="skill.html">skills</a></li>
                         <li><a href="about.html">about</a></li>
                   </ul>
@@ -116,24 +110,14 @@
       </header>
       <section class="container">
             <div class="main1">
-                  <p class="a1">contact&#46;</p>
-                  <p class="a2">Get in touch with me via social media or email&#46;</p>
-                        <div class="socials">
-                              <div class="social-pics">
-                                    <img class="pic" src="pic/facebook_logo_icon_147291.svg" alt="">
-                              </div>
-                              <div class="social-texts">
-                                    <a class="social-buttons" href="https://web.facebook.com/zharwahab">Facebook</a>
-                              </div>
-                        </div>
-                              
-            </div>
-            <div class="main2">
-                  <p>Website</p>
-                  <form action="POST">
-                        <label for=""></label>
-                        <input type="text">
-                  </form>
+                  <p class="title-1">contact&#46;</p>
+                  <p class="title-2">Get in touch with me via social media or email&#46;</p>
+                   <div class="socials-links">
+                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/facebook_logo_icon_147291.svg" alt="Facebook Logo"></a>
+                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/1491580635-yumminkysocialmedia26_83102.png" alt="Instagram Logo"></a>
+                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/telegram_logo_icon_147228.svg" alt="Telegram Logo"></a>
+                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/iconfinder-discord-4661587_122459.svg" alt="Discord Logo"></a>
+                   </div>
             </div>
       </section>
 </body>
