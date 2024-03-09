@@ -49,6 +49,9 @@
             a:hover {
                 opacity: 0.4;
             }
+            section {
+                display: block;
+            }
             .cont1 {
                 display: flex;
                 justify-content: center;
@@ -60,15 +63,18 @@
                   margin: 0;
                   margin-top: 4rem;
             }
-            .skills {
-            
-            }
-            .web-skills {
+            .con-skill {
                 display: inline-block;
-                width: 24rem;
-                justify-content: center;
 
-                margin-left: 4em;
+                background-color: #272829;
+                border-radius: 10px;
+
+                width: 24rem;
+                height: 20em;
+
+                margin-top: 2rem;
+
+                justify-content: center;
             }
             .skills-list {
                 display: flex;
@@ -80,18 +86,31 @@
                 padding: 0;
                 margin-top: 0.4rem;
             }
-            .web {
-                font-size: 2rem;
+            .skill-cat {
+                font-size: 1.6rem;
                 font-weight: 600;
                 text-align: center;
             }
-            .web-skill {
+            .skills {
                 padding: 0;
+
+                margin-top: 0;
+                margin-left: 2rem;
+                margin-bottom: 0.8rem;
+            }
+            .skill-cont {
+                color: #dddddd;
+                display: flex;
+                justify-content: center;
+                column-gap: 6rem;
+
+                margin-top: 4rem;
+                margin: 0;
             }
       </style>
 </head>
 <body>
-      <header>
+        <header>
             <nav>
                   <ul>
                         <a href="index.html"><img class="logo" src="pic/logo.svg" alt=""></a>
@@ -101,44 +120,38 @@
                         <li><a href="about.html">about</a></li>
                   </ul>
             </nav>
-      </header>
-      <section>
-        <div class="cont1">
-            <p class="title">skills&#46;</p> <br>
-        </div>
-        <div class="web-skills">
-            <p class="web">Web Skills</p>
-            <ul class="skills-list">
-                <li class="web-skill">HTML</li>
-                <li class="web-skill">CSS</li>
-                <li class="web-skill">Javascript</li>
-                <li class="web-skill">PHP</li>
-                <li class="web-skill">MySQL</li>
-            </ul>
-        </div>
-    </div>
-    <div class="web-skills">
-        <p class="web">Web Skills</p>
-        <ul class="skills-list">
-            <li class="web-skill">HTML</li>
-            <li class="web-skill">CSS</li>
-            <li class="web-skill">Javascript</li>
-            <li class="web-skill">PHP</li>
-            <li class="web-skill">MySQL</li>
-        </ul>
-    </div>
-</div>
-<div class="web-skills">
-    <p class="web">Web Skills</p>
-    <ul class="skills-list">
-        <li class="web-skill">HTML</li>
-        <li class="web-skill">CSS</li>
-        <li class="web-skill">Javascript</li>
-        <li class="web-skill">PHP</li>
-        <li class="web-skill">MySQL</li>
-    </ul>
-</div>
-</div>
-    </section>
+        </header>
+        <section>
+            <div class="cont1">
+                <p class="title">skills&#46;</p> <br>
+            </div>
+            <div class="skill-cont">
+                    <div class="con-skill">
+                            <p class="skill-cat">Web Skills</p>
+                            <ul class="skills-list">
+                                <li class="skills">HTML</li>
+                                <li class="skills">CSS</li>
+                                <li class="skills">Javascript (on-going)</li>
+                                <li class="skills">PHP</li>
+                                <li class="skills">MySQL</li>
+                            </ul>
+                    </div>
+                    <div class="con-skill">
+                        <p class="skill-cat">Design Tools and Frameworks</p>
+                        <ul class="skills-list">
+                            <li class="skills">Figma</li>
+                            <li class="skills">Canva</li>
+                            <li class="skills">Photoshop</li>
+                            <li class="skills">Bootstrap</li>
+                        </ul>
+                    </div>
+                    <div class="con-skill">
+                            <p class="skill-cat"> Skills</p>
+                            <ul class="skills-list">
+                                <li class="skills">HTML</li>
+                            </ul>
+                    </div>
+            </div>
+        </section>
 </body>
 </html>
