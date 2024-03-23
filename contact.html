@@ -23,7 +23,7 @@
                 width: 8rem;
                 margin-left: 6rem;
             }
-            ul {
+            .nav-list {
                 margin: 0;
                 padding: 0;
 
@@ -31,32 +31,30 @@
 
                 margin-right: 8rem;
             }
-            li {
+            .nav-link {
                 display: flex;
                 float: right;
                 font-size: 1.1rem;
                 padding: 20px 20px;
-                transition: opacity 2s;
                 margin-top: 0.4rem;
             }
-            li a {
+            .nav-link a {
                 text-decoration: none;
                 text-align: center;
                 margin-right: 20px;
                 color: white;
-                transition: all 0.5s;
+                transition: 0.5s;
             }
-            a:hover {
+            .nav-link a:hover {
                 opacity: 0.4;
             }
-            .container {
+            .container-1 {
                   display: flex;
                   justify-content: center;
                   column-gap: 2rem;
             }
-            .main1 {
-                  width: 40rem;
-                  display: block;
+            .cont-1 {
+                  width: 40rem;              
                   flex-direction: row;
                   text-align: center;
                   justify-content: center;
@@ -64,59 +62,59 @@
                   margin-top: 4rem;
                   margin-bottom: 4rem;
             }
-            .title-1, .title-2 {
-                  margin: 0;
-            }
             .title-1 {
                   font-size: 6rem;
                   font-weight: 620;
                   margin-bottom: 1.2rem;
+
+                  margin: 0;
             }
             .title-2 {
                   font-size: 1.2rem;
                   margin-bottom: 1.2rem;
                   font-weight: 500;
                   color: rgb(92, 92, 92);
+
+                  margin: 0;
             }
-            .socials-links {
+            .socials-list {
                   display: flex;
                   justify-content: center;
                   align-items: center;
                   width: 40rem;
                   margin-top: 2rem;
             }
-            .socials-pic {
-                  display: inline;
-                  width: 4rem;
-            }
-            img {
+            .social-img {
                   width: 4rem;
                   margin-left: 2rem;
                   margin-right: 2rem;
+                  transition: all 0.4s;
+            }
+            .social-img:hover {
+                  filter: drop-shadow(4px 4px 8px grey);
             }
       </style>
 </head>
 <body>
       <header>
             <nav>
-                  <ul>
+                  <ul class="nav-list">
                         <a href="index.html"><img class="logo" src="pic/logo.svg" alt=""></a>
-                        <li><a href="">contact</a></li>
-                        <li><a href="project.html">projects</a></li>
-                        <li><a href="skill.html">skills</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li class="nav-link"><a href="">contact</a></li>
+                        <li class="nav-link"><a href="project.html">projects</a></li>
+                        <li class="nav-link"><a href="skill.html">skills</a></li>
+                        <li class="nav-link"><a href="about.html">about</a></li>
                   </ul>
             </nav>
       </header>
-      <section class="container">
-            <div class="main1">
+      <section class="container-1">
+            <div class="cont-1">
                   <p class="title-1">contact&#46;</p>
                   <p class="title-2">Get in touch with me via social media or email&#46;</p>
-                   <div class="socials-links">
-                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/facebook_logo_icon_147291.svg" alt="Facebook Logo"></a>
-                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/1491580635-yumminkysocialmedia26_83102.png" alt="Instagram Logo"></a>
-                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/telegram_logo_icon_147228.svg" alt="Telegram Logo"></a>
-                        <a class="social-buttons" href="https://web.facebook.com/zharwahab"><img src="pic/iconfinder-discord-4661587_122459.svg" alt="Discord Logo"></a>
+                   <div class="socials-list">
+                        <a class="social-btn" href=""><img class="social-img" src="pic/facebook_logo_icon_147291.svg" alt="Facebook Logo"></a>
+                        <a class="social-btn" href=""><img class="social-img" src="pic/1491580635-yumminkysocialmedia26_83102.png" alt="Instagram Logo"></a>
+                        <a class="social-btn" href=""><img class="social-img" src="pic/telegram_logo_icon_147228.svg" alt="Telegram Logo"></a>
                    </div>
             </div>
       </section>

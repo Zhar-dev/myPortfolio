@@ -23,7 +23,7 @@
                 width: 8rem;
                 margin-left: 6rem;
             }
-            ul {
+            .nav-list {
                 margin: 0;
                 padding: 0;
 
@@ -31,7 +31,7 @@
 
                 margin-right: 8rem;
             }
-            li {
+            .nav-link {
                 display: flex;
                 float: right;
                 font-size: 1.1rem;
@@ -39,7 +39,7 @@
                 transition: opacity 2s;
                 margin-top: 0.4rem;
             }
-            li a {
+            .nav-link a {
                 text-decoration: none;
                 text-align: center;
                 margin-right: 20px;
@@ -49,32 +49,47 @@
             a:hover {
                 opacity: 0.4;
             }
-            section {
-                display: block;
-            }
-            .cont1 {
+            .cont-1 {
                 display: flex;
                 justify-content: center;
             }
-            .title {
+            .title-1 {
                   font-size: 6rem;
                   font-weight: 620;
 
                   margin: 0;
                   margin-top: 4rem;
             }
-            .con-skill {
+            .cont-2 {
+                color: #dddddd;
+                display: flex;
+                flex-wrap: wrap;
+                flex-grow: initial;
+
+                justify-content: center;
+                column-gap: 6rem;
+
+                margin-top: 4rem;
+                margin: 0;
+            }
+            .cont-skill {
                 display: inline-block;
 
                 background-color: #272829;
                 border-radius: 10px;
 
-                width: 24rem;
+                width: 22rem;
                 height: 20em;
 
                 margin-top: 2rem;
 
                 justify-content: center;
+
+                overflow: hidden;
+                transition: transform 0.3s ease;
+            }
+            .cont-skill:hover {
+                transform: scale(1.02);
             }
             .skills-list {
                 display: flex;
@@ -86,69 +101,64 @@
                 padding: 0;
                 margin-top: 0.4rem;
             }
-            .skill-cat {
+            .skill-title {
                 font-size: 1.6rem;
                 font-weight: 600;
                 text-align: center;
             }
-            .skills {
+            .skill {
                 padding: 0;
+
+                list-style: none;
+
+                text-align: left;
 
                 margin-top: 0;
                 margin-left: 2rem;
                 margin-bottom: 0.8rem;
-            }
-            .skill-cont {
-                color: #dddddd;
-                display: flex;
-                justify-content: center;
-                column-gap: 6rem;
-
-                margin-top: 4rem;
-                margin: 0;
             }
       </style>
 </head>
 <body>
         <header>
             <nav>
-                  <ul>
+                  <ul class="nav-list">
                         <a href="index.html"><img class="logo" src="pic/logo.svg" alt=""></a>
-                        <li><a href="contact.html">contact</a></li>
-                        <li><a href="project.html">projects</a></li>
-                        <li><a href="skill.html">skills</a></li>
-                        <li><a href="about.html">about</a></li>
+                        <li class="nav-link"><a href="contact.html">contact</a></li>
+                        <li class="nav-link"><a href="project.html">projects</a></li>
+                        <li class="nav-link"><a href="skill.html">skills</a></li>
+                        <li class="nav-link"><a href="about.html">about</a></li>
                   </ul>
             </nav>
         </header>
         <section>
-            <div class="cont1">
-                <p class="title">skills&#46;</p> <br>
+            <div class="cont-1">
+                <p class="title-1">skills&#46;</p> <br>
             </div>
-            <div class="skill-cont">
-                    <div class="con-skill">
-                            <p class="skill-cat">Web Skills</p>
+            <div class="cont-2">
+                    <div class="cont-skill">
+                            <p class="skill-title">Web Skills</p>
                             <ul class="skills-list">
-                                <li class="skills">HTML</li>
-                                <li class="skills">CSS</li>
-                                <li class="skills">Javascript (on-going)</li>
-                                <li class="skills">PHP</li>
-                                <li class="skills">MySQL</li>
+                                <li class="skill">HTML</li>
+                                <li class="skill">CSS</li>
+                                <li class="skill">Javascript (on-going)</li>
+                                <li class="skill">PHP</li>
+                                <li class="skill">MySQL</li>
                             </ul>
                     </div>
-                    <div class="con-skill">
-                        <p class="skill-cat">Design Tools and Frameworks</p>
+                    <div class="cont-skill">
+                        <p class="skill-title">Design Tools and Frameworks</p>
                         <ul class="skills-list">
-                            <li class="skills">Figma</li>
-                            <li class="skills">Canva</li>
-                            <li class="skills">Photoshop</li>
-                            <li class="skills">Bootstrap</li>
+                            <li class="skill">Figma</li>
+                            <li class="skill">Canva</li>
+                            <li class="skill">Photoshop</li>
+                            <li class="skill">Bootstrap</li>
                         </ul>
                     </div>
-                    <div class="con-skill">
-                            <p class="skill-cat"> Skills</p>
+                    <div class="cont-skill">
+                            <p class="skill-title"> Skills</p>
                             <ul class="skills-list">
-                                <li class="skills">HTML</li>
+                                <li class="skill">HTML</li>
                             </ul>
                     </div>
             </div>
